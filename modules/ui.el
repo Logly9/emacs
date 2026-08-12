@@ -8,25 +8,6 @@
   :init
   (vertico-mode))
 
-(use-package centaur-tabs
-  :ensure t
-  :demand
-  :config
-  (centaur-tabs-mode t)
-
-  ;; 开启图标
-  (setq centaur-tabs-set-icons t)
-
-  ;; 图标大小
-  (setq centaur-tabs-icon-scale-factor 1.0)
-
-  ;; 是否显示修改标记
-  (setq centaur-tabs-set-modified-marker t)
-
-  ;; 使用 nerd-icons（关键）
-  (setq centaur-tabs-icon-type 'nerd-icons)
-  )
-
 (use-package doom-modeline
   :ensure t
   :init
