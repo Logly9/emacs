@@ -45,7 +45,10 @@
 (add-to-list 'default-frame-alist '(font . "Fira Code Nerd Font-14"))
 
 ;; 开启 which-key 模式
-(which-key-mode)
-;; 可选：调整弹出等待时间（默认是 1.0 秒，改为 0.5 秒感官更快）
-(setq which-key-idle-delay 0.5)
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode)
+  ;; 可选：调整弹出等待时间（默认是 1.0 秒，改为 0.5 秒感官更快）
+  (setq which-key-idle-delay 0.5))
 (provide 'basic)

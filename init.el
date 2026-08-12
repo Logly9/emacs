@@ -9,11 +9,11 @@
 ;; 包管理初始化
 ;; ================================
 (require 'package)
-;; 1. 设置清华镜像源
+;; 1. 设置软件源 (清华镜像当前 403，改用官方源)
 (setq package-archives
-      '(("gnu"    . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-        ("nongnu" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
-        ("melpa"  . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+      '(("gnu"    . "https://elpa.gnu.org/packages/")
+        ("nongnu" . "https://elpa.nongnu.org/nongnu/")
+        ("melpa"  . "https://melpa.org/packages/")))
 ;; 2. 初始化包管理器
 (unless (bound-and-true-p package--initialized)
   (package-initialize))
