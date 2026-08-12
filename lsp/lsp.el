@@ -8,7 +8,7 @@
 (setq eglot-autostart t)
 (use-package eglot
   :defer t
-  :hook ((rust-ts-mode python-ts-mode) . eglot-ensure))
+  :hook ((c-ts-mode cpp-ts-mode  python-ts-mode) . eglot-ensure))
 
 (use-package corfu
   :ensure t
@@ -19,8 +19,8 @@
   :init
   (global-corfu-mode))
 
- (use-package apheleia
-   :config
-   (apheleia-global-mode +1))
+(use-package apheleia
+  :config
+  (apheleia-global-mode +1))
 
 (provide 'lsp)
